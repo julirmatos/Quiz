@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Trivia Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonte melhor -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <h1>Bem-vindo ao Quiz Laboratória</h1>
+
+
+    <input type="text" id="inputNome" placeholder="Digite seu nome 💛">
+    <button onclick="jogador()">Vamos!</button>
+
+    <h4>Boa sorte 🤗😎 <span id="nome"></span> 🤞</h4>
+
+    <!-- CARDS DAS PERGUNTAS -->
+    <div class="cards">
+
+        <!-- Card 1 -->
+        <div class="card" id="card1">
+            <h4>1. Em que ano a Laboratória foi fundada?</h4>
+
+            <label><input type="radio" name="respQ1" value="2014"> 2014</label><br>
+            <label><input type="radio" name="respQ1" value="2016"> 2016</label><br>
+            <label><input type="radio" name="respQ1" value="2018"> 2018</label><br>
+
+            <button onclick="verificarResposta('card1','respQ1','2014')">
+                Resposta
+            </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" id="card2">
+            <h4>2. Em qual país a Laboratória foi fundada?</h4>
+
+            <label><input type="radio" name="respQ2" value="Peru"> Peru</label><br>
+            <label><input type="radio" name="respQ2" value="México"> México</label><br>
+            <label><input type="radio" name="respQ2" value="Equador"> Equador</label><br>
+
+            <button onclick="verificarResposta('card2','respQ2','Peru')">
+                Resposta
+            </button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card" id="card3">
+            <h4>3. Qual é o nome da presidente fundadora da Laboratória?</h4>
+
+            <label><input type="radio" name="respQ3" value="Mariana Costa"> Mariana Costa</label><br>
+            <label><input type="radio" name="respQ3" value="Karen Kun"> Karen Kun</label><br>
+            <label><input type="radio" name="respQ3" value="Carolina Covarrubias"> Carolina Covarrubias</label><br>
+
+            <button onclick="verificarResposta('card3','respQ3','Mariana Costa')">
+                Resposta
+            </button>
+        </div>
+    </div>
+
+    <button onclick="restart()">Tentar novamente</button>
+
+    <footer class="footer">
+        <p>Desenvolvido por Juliana Matos 💜 @Laboratoria 2023 - SAP010</p>
+
+        <div class="logos">
+            <a href="https://www.laboratoria.la/br" target="_blank" rel="noopener noreferrer">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYTq5sInXE64Lz0ZPgPPs4PR81rNJNCOPfMQ&s"
+                    alt="Laboratoria" class="logo">
+            </a>
+
+            <a href="https://github.com/julianamatos" target="_blank" rel="noopener noreferrer">
+                <img src="https://pngimg.com/d/github_PNG40.png" alt="GitHub" class="logo">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
